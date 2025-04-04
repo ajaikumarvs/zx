@@ -46,17 +46,22 @@ package-macos-arm64:
 package-windows:
 	cd $(OUTPUT_DIR) && zip ../$(PACKAGE_DIR)/$(BINARY_NAME)-windows.zip $(BINARY_NAME).exe
 
-# ✅ Generate SHA256 checksums
+#Generate SHA256 checksums
 checksums:
 	cd $(PACKAGE_DIR) && sha256sum * > $(CHECKSUM_FILE)
 	@echo "Checksums written to $(CHECKSUM_FILE)"
 
-# 🐙 GitHub release upload
-release: all
-	gh release create v$(VERSION) \
-		--title "Release v$(VERSION)" \
-		--notes "Auto-built via Makefile" \
-		$(PACKAGE_DIR)/*
+#GitHub release upload
+#Example: make release VERSION=1.0.0 PRERELEASE=true
+release: all checksums
+	@echo "Creating GitHub release v$(VERSION)"
+	@CHANGELOG=$$(git log --pretty=format:'* %s (%an)' $$(git describe --tags --abbrev=0)..HEAD); \
+	if [ "$(PRERELEASE)" = "true" ]; then \
+		gh release create v$(VERSION) --title "v$(VERSION)" --notes "$$CHANGELOG" --prerelease $(PACKAGE_DIR)/*; \
+	else \
+		gh release create v$(VERSION) --title "v$(VERSION)" --notes "$$CHANGELOG" $(PACKAGE_DIR)/*; \
+	fi
+
 
 # Install locally
 install:
