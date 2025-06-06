@@ -1,0 +1,25 @@
+This is a sample text file for testing the zx search tool.
+
+Here are some patterns to search for:
+- function definitions
+- TODO comments
+- error handling
+- import statements
+
+Some example code snippets:
+func main() {
+    fmt.Println("Hello World")
+}
+
+// TODO: Add more test cases
+func testFunction() error {
+    return errors.New("test error")
+}
+
+This file contains multiple lines with different patterns.
+You can search for specific words, regex patterns, or phrases.
+
+Error handling is important in Go programming.
+Functions should return errors when something goes wrong.
+
+The search tool should highlight matches and show line numbers. 

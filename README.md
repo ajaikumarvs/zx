@@ -1,3 +1,4 @@
+
 # zx
 
 ⚡️ `zx` is a lightning-fast, colorized, fuzzy-search CLI tool written in Go. Think of it as `grep`, but smarter, prettier, and built for the modern terminal.
