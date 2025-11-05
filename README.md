@@ -1,18 +1,18 @@
 # zx
 
-⚡️ **zx** is a powerful, interactive terminal-based search tool with a modern TUI interface. Built in Go with Bubble Tea, it combines the power of regex search with intuitive file management and smart performance optimization.
+**zx** is a powerful, interactive terminal-based search tool with a modern TUI interface. Built in Go with Bubble Tea, it combines the power of regex search with intuitive file management and smart performance optimization.
 
 ---
 
-## ✨ Features
+## Features
 
-### 🎯 **Interactive TUI Interface**
+### **Interactive TUI Interface**
 - **File Browser Mode**: Navigate directories with vim-style keys
 - **Search Input Mode**: Enter regex patterns with real-time feedback
 - **Search Results Mode**: Browse matches with syntax highlighting
 - **Progress Mode**: Real-time search progress with ETA calculations
 
-### 📁 **Smart File Management**
+### **Smart File Management**
 - **Multi-Selection**: Select files and directories for targeted searches
 - **Directory Navigation**: Enter/exit directories seamlessly
 - **Selection Modes**: 
@@ -23,21 +23,21 @@
   - `a`: Select all items
   - `A`: Deselect all
 
-### 🔍 **Advanced Search Capabilities**
+### **Advanced Search Capabilities**
 - **Regex Support**: Full regular expression pattern matching
 - **Parallel Processing**: Multi-threaded search with configurable workers
 - **Smart Filtering**: Automatic binary file detection and exclusion
 - **Memory Management**: Configurable limits for large datasets
 - **Progress Tracking**: Real-time progress with file count and data processed
 
-### ⚙️ **Performance Optimization**
+### **Performance Optimization**
 - **Auto-Configuration**: Automatically adjusts settings based on dataset size
 - **Large File Handling**: Configurable file size limits (100MB - 2GB)
 - **Concurrent Workers**: Scales from 10 to 100+ workers based on CPU cores
 - **Memory Limits**: Prevents memory exhaustion on massive datasets
 - **Binary Detection**: Skips binary files for faster processing
 
-### 📊 **Analysis & Diagnostics**
+### **Analysis & Diagnostics**
 - **Folder Analysis**: Shows file statistics and recommendations
 - **Configuration Mode**: Tune performance settings manually
 - **Error Reporting**: Detailed error messages and suggestions
@@ -45,7 +45,7 @@
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Interactive Mode (Recommended)
 ```bash
@@ -60,7 +60,7 @@ Navigate with arrow keys or vim keys (`j`/`k`), select files/directories, and pr
 
 ---
 
-## 🎮 Key Bindings
+## Key Bindings
 
 ### File Browser Mode
 | Key | Action |
@@ -101,7 +101,7 @@ Navigate with arrow keys or vim keys (`j`/`k`), select files/directories, and pr
 
 ---
 
-## 🔧 Configuration
+## Configuration
 
 ### Performance Settings
 Access configuration mode with `c` key:
@@ -118,7 +118,7 @@ The tool automatically analyzes your dataset and adjusts settings:
 
 ---
 
-## 📈 Performance
+## Performance
 
 ### Optimized for Large Datasets
 - **100GB+ codebases**: Tested and optimized
@@ -134,7 +134,7 @@ The tool automatically analyzes your dataset and adjusts settings:
 
 ---
 
-## 🎨 Visual Features
+## Visual Features
 
 - **Syntax Highlighting**: Matches highlighted in search results
 - **File Metadata**: Shows file sizes, modification times
@@ -145,7 +145,7 @@ The tool automatically analyzes your dataset and adjusts settings:
 
 ---
 
-## 🔍 Search Examples
+## Search Examples
 
 ### Basic Patterns
 ```
@@ -164,7 +164,7 @@ func\s+\w+\([^)]*\)     # Find function signatures
 
 ---
 
-## 🛠️ Building from Source
+## Building from Source
 
 ```bash
 git clone <repository>
@@ -177,15 +177,6 @@ go build -o zx
 - [Bubble Tea](https://github.com/charmbracelet/bubbletea) - TUI framework
 - [Lipgloss](https://github.com/charmbracelet/lipgloss) - Styling
 
----
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
 
 ---
 
@@ -195,8 +186,7 @@ MIT License - see LICENSE file for details.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built with [Bubble Tea](https://github.com/charmbracelet/bubbletea) TUI framework
 - Inspired by modern terminal tools like `fzf`, `ripgrep`, and `fd`
-- Performance optimizations inspired by large-scale codebase analysis tools
