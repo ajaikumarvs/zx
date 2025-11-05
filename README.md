@@ -167,7 +167,7 @@ func\s+\w+\([^)]*\)     # Find function signatures
 ## Building from Source
 
 ```bash
-git clone <repository>
+git clone https://github.com/ajaikumarvs/zx
 cd zx
 go build -o zx
 ```
