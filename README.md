@@ -180,7 +180,7 @@ go build -o zx
 
 ---
 
-## 📄 License
+## License
 
 MIT License - see LICENSE file for details.
 
